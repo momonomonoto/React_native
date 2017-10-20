@@ -1,18 +1,11 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-import {Animated} from 'react-native';
-import NewProject from './Components/SimpleAnimation';
+import { AppRegistry } from 'react-native';
+import { Root } from './Components/Config';
 
+export default class NewProject extends Component {
+  render() {
+    return <Root />;
+  }
+}
 
 AppRegistry.registerComponent('NewProject', () => NewProject);

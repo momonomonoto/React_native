@@ -1,0 +1,56 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "ecmaVersion": 6,
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "config/webpack.config.js"
+      }
+    }
+  },
+  "rules": {
+    "react/prefer-es6-class": [
+      2,
+      "always"
+    ],
+    "react/prefer-stateless-function": [0],
+    "react/forbid-prop-types": [0],
+    "react/jsx-no-bind": [0],
+    "react/no-find-dom-node": [0],
+    "react/require-default-props": [0],
+    "import/no-extraneous-dependencies": [0],
+    "import/extensions": [0],
+    "import/prefer-default-export": [0],
+    "class-methods-use-this": [0],
+    "jsx-a11y/label-has-for": [0],
+    "jsx-a11y/no-static-element-interactions": [0],
+    "max-len": [2, 120, {"ignoreRegExpLiterals": true}],
+    "no-restricted-syntax": [0],
+    "no-underscore-dangle": [0],
+    "react/jsx-filename-extension": [0],
+    "jsx-a11y/href-no-hash": "off",
+  },
+  "globals": {
+    "routes": true,
+    "asset_path": true,
+    "dataLayer": true
+  }
+}
